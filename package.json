@@ -15,7 +15,8 @@
     "heroku-postbuild": "npm run build:frontend",
     "start": "node index.js",
     "docker:build": "cross-env-shell docker build -t ziolko/roombelt:$npm_package_version -t ziolko/roombelt:latest .",
-    "docker:publish": "cross-env-shell docker push ziolko/roombelt:$npm_package_version && docker push ziolko/roombelt:latest"
+    "docker:publish": "cross-env-shell docker push ziolko/roombelt:$npm_package_version && docker push ziolko/roombelt:latest",
+    "test": "jest"
   },
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.5.2",
